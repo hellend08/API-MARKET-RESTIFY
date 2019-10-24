@@ -20,6 +20,12 @@ usersRoutes.get('/users',(req,res,next)=>{
     res.end(JSON.stringify(Users))
 });
 
+// usersRoutes.del('/users', (res, req, next) =>{
+//     delete Users[parseInt(req.params.id)];
+// 	res.setHeader('Content-Type', 'application/json')
+// 	res.writeHead(200)
+// 	res.end(JSON.stringify(true));
+// })
 /* usersRoutes.get('/users/:id',(req,res,next)=>{
     
     res.writeHead(201)

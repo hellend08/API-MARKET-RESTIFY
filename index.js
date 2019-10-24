@@ -10,23 +10,23 @@ server.use(restify.plugins.queryParser())
 server.use(restify.plugins.bodyParser())
 //userRoutes.applyRoutes(server);
 
-server.put('/item/:id', (req, res) => {
-    const krowdy = users[parseInt(req.params.id)];
-    const act = req.body;
-    for (let field in act) {
-        krowdy[field] = act[field]
-    }
-    res.setHeader('Content-type', 'application/json')
-    res.writeHead(200);
-    res.end(JSON.stringify(krowdy))
-});
+// server.put('/item/:id', (req, res) => {
+//     const krowdy = users[parseInt(req.params.id)];
+//     const act = req.body;
+//     for (let field in act) {
+//         krowdy[field] = act[field]
+//     }
+//     res.setHeader('Content-type', 'application/json')
+//     res.writeHead(200);
+//     res.end(JSON.stringify(krowdy))
+// });
 
-server.del('/item/:id', (req, res, next) => {
-	delete users[parseInt(req.params.id)];
-	res.setHeader('Content-Type', 'application/json')
-	res.writeHead(200)
-	res.end(JSON.stringify(true));
-});
+// server.del('/item/:id', (req, res, next) => {
+// 	delete users('./Bd/db.js')[parseInt(req.params.id)];
+// 	res.setHeader('Content-Type', 'application/json')
+// 	res.writeHead(200)
+// 	res.end(JSON.stringify(true));
+// });
 
 
 server.listen(PORT,()=>{

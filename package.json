@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "start": "nodemon index.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MAYTESI/API-MARKET-RESTIFY.git"
@@ -14,10 +11,6 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MAYTESI/API-MARKET-RESTIFY/issues"
-  },
-  "homepage": "https://github.com/MAYTESI/API-MARKET-RESTIFY#readme",
-  "devDependencies": {
-    "nodemon": "^1.19.4"
   },
   "dependencies": {
     "restify": "^8.4.0",

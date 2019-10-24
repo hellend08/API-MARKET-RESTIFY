@@ -16,8 +16,10 @@
     "url": "https://github.com/MAYTESI/API-MARKET-RESTIFY/issues"
   },
   "homepage": "https://github.com/MAYTESI/API-MARKET-RESTIFY#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  },
   "dependencies": {
-    "nodemon": "^1.19.4",
     "restify": "^8.4.0",
     "restify-router": "^0.5.1"
   }
